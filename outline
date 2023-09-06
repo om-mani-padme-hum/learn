@@ -1,0 +1,9 @@
+server: generate problem
+server: store hash with json encoded answers
+server: render problem to client
+client: sees body of problem (including randomly chosen constants and variables from the server)
+client: sees inputs for each of the expected answers as part of a form with hash stored as hidden input
+client: inputs answers and submits form
+server: validates hash and evaluates answers
+server: updates database with metric results for user cataloged by path
+server: renders results to client
